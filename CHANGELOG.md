@@ -5,6 +5,15 @@ All notable changes to the Employee Directory API project will be documented in 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-08-26
+
+### Added
+- **Liquibase Database Migration Engine**: Added `liquibase-core` for declarative, version-controlled database DDL evolutions.
+- **Liquibase Changelogs**: Created `db.changelog-master.xml`, `001-initial-schema.xml`, and `002-seed-data.xml`.
+- **PostgreSQL Database Driver**: Added `postgresql` JDBC driver dependency and `application-postgres.yml` profile.
+- **JPA Validation Mode**: Updated `hibernate.ddl-auto` to `validate` so Liquibase governs database schema lifecycle.
+- **Migration Integration Test**: Added `LiquibaseIntegrationTest` expanding test suite to 48 passing tests.
+
 ## [1.1.0] - 2026-08-26
 
 ### Added

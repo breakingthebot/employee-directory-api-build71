@@ -24,10 +24,13 @@ spring:
     graphiql:
       enabled: true
       path: /graphiql
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+    enabled: true
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     show-sql: true
     properties:
       hibernate:

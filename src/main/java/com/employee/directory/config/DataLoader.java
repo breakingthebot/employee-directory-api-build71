@@ -49,7 +49,7 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         // Seed Users for Authentication
-        if (userRepository.count() == 0) {
+        if (userRepository.findByUsername("admin").isEmpty()) {
             logger.info("Seeding default security user accounts...");
             User adminUser = new User("admin", passwordEncoder.encode("admin123"), Role.ROLE_ADMIN);
             User regularUser = new User("user", passwordEncoder.encode("user123"), Role.ROLE_USER);

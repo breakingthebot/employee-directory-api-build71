@@ -102,6 +102,19 @@ Created: 2026-08-08
             <version>2.5.0</version>
         </dependency>
 
+        <!-- Liquibase Core for Database Schema Versioning & Migrations -->
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+        </dependency>
+
+        <!-- PostgreSQL JDBC Driver -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
         <!-- H2 In-Memory Database -->
         <dependency>
             <groupId>com.h2database</groupId>
