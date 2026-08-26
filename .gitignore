@@ -1,0 +1,25 @@
+# Build & Environment
+AGENTS.md
+BUILD_NOTES.md
+.env
+.env.local
+venv/
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+*.log
+dist/
+build/
+
+# Java & Maven Build Output
+target/
+*.class
+*.jar
+*.war
+*.ear
+.idea/
+*.iml
+.classpath
+.project
+.settings/
