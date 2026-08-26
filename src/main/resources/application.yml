@@ -20,6 +20,10 @@ spring:
       path: /h2-console
       settings:
         web-allow-others: true
+  graphql:
+    graphiql:
+      enabled: true
+      path: /graphiql
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:

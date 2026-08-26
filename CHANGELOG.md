@@ -5,6 +5,14 @@ All notable changes to the Employee Directory API project will be documented in 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-08-26
+
+### Added
+- **GraphQL API Layer**: Integrated `spring-boot-starter-graphql` exposing GraphQL schema endpoints at `/graphql`.
+- **GraphQL Schema Definition**: Created `schema.graphqls` defining queries (`employees`, `employeeById`, `departmentAnalytics`) and mutations (`createEmployee`, `deleteEmployee`).
+- **Interactive GraphiQL Playground**: Enabled in-browser GraphiQL IDE at `/graphiql` for testing custom field selections.
+- **GraphQL Integration Test Suite**: Added `EmployeeGraphQLControllerTest` expanding test coverage to 47 passing tests.
+
 ## [1.0.0] - 2026-08-26
 
 ### Added

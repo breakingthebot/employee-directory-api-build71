@@ -35,6 +35,12 @@ Created: 2026-08-08
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- Spring Boot Starter GraphQL for GraphQL API Layer -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-graphql</artifactId>
+        </dependency>
+
         <!-- Spring Data JPA for object-relational mapping -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -1,0 +1,45 @@
+# GraphQL Schema for Employee Directory API
+# Defines query and mutation contracts for employee catalog and analytics.
+
+type Query {
+    employees(department: String, page: Int, size: Int): [Employee!]!
+    employeeById(id: ID!): Employee
+    departmentAnalytics: [DepartmentAnalytics!]!
+}
+
+type Mutation {
+    createEmployee(input: EmployeeInput!): Employee!
+    deleteEmployee(id: ID!): Boolean!
+}
+
+input EmployeeInput {
+    firstName: String!
+    lastName: String!
+    email: String!
+    department: String!
+    jobTitle: String!
+    salary: Float!
+    hireDate: String!
+}
+
+type Employee {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    email: String!
+    department: String!
+    jobTitle: String!
+    salary: Float!
+    hireDate: String!
+    status: String!
+    createdAt: String!
+    updatedAt: String!
+}
+
+type DepartmentAnalytics {
+    department: String!
+    employeeCount: Int!
+    averageSalary: Float!
+    minSalary: Float!
+    maxSalary: Float!
+}

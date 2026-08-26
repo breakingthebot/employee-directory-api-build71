@@ -58,6 +58,7 @@ public class SecurityConfig {
                         .requestMatchers("/api/v1/auth/**").permitAll()
                         .requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
                         .requestMatchers("/h2-console/**").permitAll()
+                        .requestMatchers("/graphql", "/graphiql/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/api/v1/employees/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/api/v1/audit-logs/**").permitAll()
                         
